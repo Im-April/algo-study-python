@@ -4,7 +4,7 @@ print('1부터 n까지 정수의 합을 구합니다.')
 n = int(input('n 값을 입력하세요 : '))
 
 sum = 0
-i = 1
+i = 1 # 카운터용 변수
 
 while i <= n : # i가 n보다 작거나 같을 동안 반복
     sum += i # sum = sum + i

@@ -4,11 +4,15 @@ print('*를 출력합니다.')
 n = int(input('몇 개를 출력할까요 ? : '))
 w = int(input('몇 개마다 줄바꿈할까요 ? : '))
 
-for i in range(n) : # n 번 반복
+for i in range(n) : # i는 0부터 n-1까지 반복 (n번 반복)
     print('*', end='')
-    if i % w == w - 1 : # n번 판단
+    if i % w == w - 1 : # n번 판단(0부터 시작)
         print() # 줄바꿈
 
 
-if n % w : # 1번 판단
+if n % w : # 1번 판단 
+    '''
+    총 개수가 w로 나누어떨어지지 않으면 마지막에 줄바꿈
+    예: n=7, w=3일 때 → 7%3=1 (참) → 줄바꿈 실행
+    '''
     print() # 줄바꿈

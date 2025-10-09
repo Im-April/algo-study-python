@@ -8,6 +8,7 @@ first = list_num[-1]
 second = list_num[-2]
 
 # 가장 큰 수가 더해지는 횟수 계산
+# 반복되는 수열에 대한 파악
 count = int(m / (k+1)) * k
 count += m % (k+1)
 
